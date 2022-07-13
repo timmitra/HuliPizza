@@ -20,18 +20,23 @@ struct ContentView: View {
           .font(.title)
         Text("Order Pizza")
           .font(.largeTitle)
-          Spacer()
-        HStack(alignment: .top, spacing: 15) {
-          Image("1_100w")
-          Text("Huli Chicken Pizza")
-          Spacer()
+        Text("Menu")
+        List(0 ..< 5) { item in
+          HStack(alignment: .top, spacing: 15) {
+            Image("1_100w")
+            Text("Huli Chicken Pizza")
+            Spacer()
+          }
         }
         Text("Your Order")
-        HStack(alignment: .firstTextBaseline) {
-          Text("You order item")
+        List(0..<5) { item in
+          HStack(alignment: .firstTextBaseline) {
+            Text("You order item")
             Spacer()
-          Text("0.00")
+            Text("0.00")
+          }
         }
+        Spacer()
       }
       .padding()
     }
