@@ -17,8 +17,6 @@ struct ContentHeaderView: View {
           Text("Huli Pizza Company")
         }
           .font(.title)
-        Text("Order Pizza")
-          .font(.largeTitle)
       }
     }
 }
