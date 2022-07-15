@@ -12,18 +12,7 @@ struct MenuListView: View {
       VStack {
         Text("Menu")
         List(0 ..< 5) { item in
-          HStack(alignment: .top, spacing: 15) {
-            Image("1_100w")
-            VStack {
-              Text("Huli Chicken Pizza")
-              HStack {
-                ForEach(0..<4){ item in
-                  Image("Pizza Slice")
-                }
-              }
-            }
-            Spacer()
-          }
+          MenuRowView()
         }
       }
     }
