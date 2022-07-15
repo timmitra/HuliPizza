@@ -11,6 +11,9 @@
 		2A7F1893287E71610028F455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F1892287E71610028F455 /* ContentView.swift */; };
 		2A7F1895287E71620028F455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F1894287E71620028F455 /* Assets.xcassets */; };
 		2A7F1898287E71620028F455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F1897287E71620028F455 /* Preview Assets.xcassets */; };
+		2A7F18A328812AAC0028F455 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F18A228812AAC0028F455 /* OrderListView.swift */; };
+		2A7F18A528812B6C0028F455 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F18A428812B6C0028F455 /* MenuListView.swift */; };
+		2A7F18A728812BE70028F455 /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F18A628812BE70028F455 /* ContentHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		2A7F1892287E71610028F455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A7F1894287E71620028F455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7F1897287E71620028F455 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A7F18A228812AAC0028F455 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		2A7F18A428812B6C0028F455 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
+		2A7F18A628812BE70028F455 /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,15 @@
 		2A7F188F287E71610028F455 /* HuliPizza */ = {
 			isa = PBXGroup;
 			children = (
+				2A7F18A028812A4B0028F455 /* Order View */,
+				2A7F18A128812A650028F455 /* Menu View */,
+				2A7F189F28812A440028F455 /* Model */,
+				2A7F189E28812A370028F455 /* History View */,
 				2A7F1890287E71610028F455 /* HuliPizzaApp.swift */,
 				2A7F1892287E71610028F455 /* ContentView.swift */,
 				2A7F1894287E71620028F455 /* Assets.xcassets */,
 				2A7F1896287E71620028F455 /* Preview Content */,
+				2A7F18A628812BE70028F455 /* ContentHeaderView.swift */,
 			);
 			path = HuliPizza;
 			sourceTree = "<group>";
@@ -65,6 +76,36 @@
 				2A7F1897287E71620028F455 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A7F189E28812A370028F455 /* History View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "History View";
+			sourceTree = "<group>";
+		};
+		2A7F189F28812A440028F455 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7F18A028812A4B0028F455 /* Order View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F18A228812AAC0028F455 /* OrderListView.swift */,
+			);
+			path = "Order View";
+			sourceTree = "<group>";
+		};
+		2A7F18A128812A650028F455 /* Menu View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F18A428812B6C0028F455 /* MenuListView.swift */,
+			);
+			path = "Menu View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7F18A728812BE70028F455 /* ContentHeaderView.swift in Sources */,
 				2A7F1893287E71610028F455 /* ContentView.swift in Sources */,
+				2A7F18A528812B6C0028F455 /* MenuListView.swift in Sources */,
 				2A7F1891287E71610028F455 /* HuliPizzaApp.swift in Sources */,
+				2A7F18A328812AAC0028F455 /* OrderListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

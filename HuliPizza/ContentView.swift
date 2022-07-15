@@ -11,38 +11,9 @@ struct ContentView: View {
     var body: some View {
         
       VStack {
-        ZStack {
-          Image("Surf Board")
-            .resizable()
-            .scaledToFit()
-          Text("Huli Pizza Company")
-        }
-          .font(.title)
-        Text("Order Pizza")
-          .font(.largeTitle)
-        Text("Menu")
-        List(0 ..< 5) { item in
-          HStack(alignment: .top, spacing: 15) {
-            Image("1_100w")
-            VStack {
-              Text("Huli Chicken Pizza")
-              HStack {
-                ForEach(0..<4){ item in
-                  Image("Pizza Slice")
-                }
-              }
-            }
-            Spacer()
-          }
-        }
-        Text("Your Order")
-        List(0..<5) { item in
-          HStack(alignment: .firstTextBaseline) {
-            Text("You order item")
-            Spacer()
-            Text("0.00")
-          }
-        }
+        ContentHeaderView()
+        MenuListView()
+        OrderListView()
         Spacer()
       }
       .padding()
