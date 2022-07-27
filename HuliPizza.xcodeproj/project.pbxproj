@@ -77,6 +77,7 @@
 				2A7F18A628812BE70028F455 /* ContentHeaderView.swift */,
 				2A7F18AE28812EE90028F455 /* PageTitleView.swift */,
 				2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */,
+				2AE15CB52890EF4A0079B1F9 /* ListHeaderView.swift */,
 				2AE15CB22890EA5C0079B1F9 /* HistoryView */,
 				2A7F18A028812A4B0028F455 /* Order View */,
 				2A7F18A128812A650028F455 /* Menu View */,
@@ -85,7 +86,6 @@
 				2A7F1890287E71610028F455 /* HuliPizzaApp.swift */,
 				2A7F1894287E71620028F455 /* Assets.xcassets */,
 				2A7F1896287E71620028F455 /* Preview Content */,
-				2AE15CB52890EF4A0079B1F9 /* ListHeaderView.swift */,
 			);
 			path = HuliPizza;
 			sourceTree = "<group>";
