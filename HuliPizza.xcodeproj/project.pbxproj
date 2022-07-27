@@ -21,6 +21,7 @@
 		2AE15CAF2890E63A0079B1F9 /* PizzaHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */; };
 		2AE15CB12890E72E0079B1F9 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */; };
 		2AE15CB42890EC5B0079B1F9 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */; };
+		2AE15CB62890EF4A0079B1F9 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB52890EF4A0079B1F9 /* ListHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHistoryView.swift; sourceTree = "<group>"; };
 		2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
+		2AE15CB52890EF4A0079B1F9 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2A7F1890287E71610028F455 /* HuliPizzaApp.swift */,
 				2A7F1894287E71620028F455 /* Assets.xcassets */,
 				2A7F1896287E71620028F455 /* Preview Content */,
+				2AE15CB52890EF4A0079B1F9 /* ListHeaderView.swift */,
 			);
 			path = HuliPizza;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				2A7F18AF28812EE90028F455 /* PageTitleView.swift in Sources */,
 				2A7F18A328812AAC0028F455 /* OrderListView.swift in Sources */,
 				2AE15CB12890E72E0079B1F9 /* HistoryListView.swift in Sources */,
+				2AE15CB62890EF4A0079B1F9 /* ListHeaderView.swift in Sources */,
 				2AE15CAF2890E63A0079B1F9 /* PizzaHistoryView.swift in Sources */,
 				2A7F18AD28812E160028F455 /* RatingsView.swift in Sources */,
 			);

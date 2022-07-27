@@ -10,7 +10,7 @@ import SwiftUI
 struct MenuListView: View {
     var body: some View {
       VStack {
-        Text("Menu")
+        ListHeaderView(text: "Menu")
         List(0 ..< 5) { item in
           MenuRowView()
         }
@@ -23,3 +23,4 @@ struct MenuListView_Previews: PreviewProvider {
         MenuListView()
     }
 }
+
