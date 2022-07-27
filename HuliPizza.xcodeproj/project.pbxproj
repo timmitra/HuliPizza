@@ -18,6 +18,8 @@
 		2A7F18AB28812DA60028F455 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F18AA28812DA60028F455 /* MenuRowView.swift */; };
 		2A7F18AD28812E160028F455 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F18AC28812E160028F455 /* RatingsView.swift */; };
 		2A7F18AF28812EE90028F455 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F18AE28812EE90028F455 /* PageTitleView.swift */; };
+		2AE15CAF2890E63A0079B1F9 /* PizzaHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */; };
+		2AE15CB12890E72E0079B1F9 /* PizzaHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB02890E72E0079B1F9 /* PizzaHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		2A7F18AA28812DA60028F455 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 		2A7F18AC28812E160028F455 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		2A7F18AE28812EE90028F455 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHistoryView.swift; sourceTree = "<group>"; };
+		2AE15CB02890E72E0079B1F9 /* PizzaHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 			children = (
 				2A7F1892287E71610028F455 /* ContentView.swift */,
 				2A7F18A628812BE70028F455 /* ContentHeaderView.swift */,
+				2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */,
 				2A7F18AE28812EE90028F455 /* PageTitleView.swift */,
+				2AE15CB02890E72E0079B1F9 /* PizzaHistory.swift */,
 				2A7F18A028812A4B0028F455 /* Order View */,
 				2A7F18A128812A650028F455 /* Menu View */,
 				2A7F189F28812A440028F455 /* Model */,
@@ -198,6 +204,8 @@
 				2A7F18AB28812DA60028F455 /* MenuRowView.swift in Sources */,
 				2A7F18AF28812EE90028F455 /* PageTitleView.swift in Sources */,
 				2A7F18A328812AAC0028F455 /* OrderListView.swift in Sources */,
+				2AE15CB12890E72E0079B1F9 /* PizzaHistory.swift in Sources */,
+				2AE15CAF2890E63A0079B1F9 /* PizzaHistoryView.swift in Sources */,
 				2A7F18AD28812E160028F455 /* RatingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
