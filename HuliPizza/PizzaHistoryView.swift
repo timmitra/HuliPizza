@@ -12,7 +12,7 @@ struct PizzaHistoryView: View {
     VStack {
       ContentHeaderView()
       PageTitleView(title: "Pizza History")
-      PizzaHistory()
+      HistoryListView()
       Spacer()
     }
   }
