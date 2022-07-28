@@ -15,9 +15,13 @@ struct PageTitleView: View {
       Text(title)
         .font(.largeTitle)
       .fontWeight(.heavy)
+      .padding(.trailing)
+    }.overlay(
       Image(systemName: "chevron.up.square")
         .font(.title)
-    }.foregroundColor(Color("G1"))
+        .padding()
+        ,alignment: .leading
+    ).foregroundColor(Color("G1"))
       .background(Color("G4"))
   }
 }

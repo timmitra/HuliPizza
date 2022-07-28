@@ -12,6 +12,7 @@ struct PizzaHistoryView: View {
     VStack {
       ContentHeaderView()
       PageTitleView(title: "Pizza History")
+      SelectedImageView(image: "1_250w")
       HistoryListView()
       Spacer()
     }

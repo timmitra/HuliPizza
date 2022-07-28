@@ -11,8 +11,10 @@ struct SelectedImageView: View {
   var image: String
     var body: some View {
       Image(image)
-        .clipShape(RoundedRectangle(cornerRadius: 15))
-        .shadow(color: Color.black.opacity(0.5),  radius: 5, x: 5, y: 5)
+        .resizable()
+        .scaledToFit()
+        .cornerRadius(30)
+        .shadow(color: Color.black.opacity(0.5),  radius: 10, x: 5, y: 5)
     }
 }
 
