@@ -15,7 +15,7 @@ struct HistoryRowView: View {
         .shadow(color: Color.black.opacity(0.5),  radius: 10, x: 5, y: 5)
       Text("Huli Chicken")
         .font(.title)
-      Spa cer()
+      Spacer()
     }.overlay(
       Image(systemName: "chevron.right.square")
     .padding()
