@@ -22,7 +22,6 @@ struct MenuRowView: View {
         RatingsView()
       }
       }
-      Spacer()
     }
   }
 
