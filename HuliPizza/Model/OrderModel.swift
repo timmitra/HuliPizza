@@ -131,7 +131,8 @@ let testOrderItem = OrderItem(id: 1, menuID: 1, name: "Huli Chicken", comments: 
 
 
 ///An class for user preferences in ordering. Will be used with an environment object.
-class UserPreferences{
-    var size:Size = .small
+/// can use environment object anywhere in the heirarchy where content view is the root view
+class UserPreferences: ObservableObject{
+    @Published var size:Size = .medium
 }
 
