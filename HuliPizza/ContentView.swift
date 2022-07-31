@@ -7,8 +7,11 @@
 
 import SwiftUI
 
+/* Generally, you'll use Observable Objects for your model, such as the Order Model. You use State and Binding for the view and view conditions.
+ */
+
 struct ContentView: View {
-  @State var orderModel:OrderModel
+  @ObservedObject var orderModel:OrderModel
   @State var isMenuDisplayed: Bool = true
   
     var body: some View {
@@ -17,7 +20,7 @@ struct ContentView: View {
         Button(action: { self.isMenuDisplayed.toggle() }) {
           PageTitleView(title: "Order Pizza", isDisplayingOrders: isMenuDisplayed)
         }
-        MenuListView(orderModel: $orderModel)
+        MenuListView(orderModel: orderModel)
           .layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
         OrderListView(orderModel: orderModel)
           .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
