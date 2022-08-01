@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct HistoryListView: View {
+  var historyModel = HistoryModel()
   var body: some View {
     VStack {
-      List(0..<5) { item in
-        HistoryRowView()
+      List(historyModel.historyItems) { item in
+        HistoryRowView(historyItem: item)
       }
     }
   }
