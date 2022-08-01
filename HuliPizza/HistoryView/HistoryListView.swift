@@ -9,10 +9,14 @@ import SwiftUI
 
 struct HistoryListView: View {
   var historyModel = HistoryModel()
+  @Binding var imageID: Int
   var body: some View {
-    VStack {
+    NavigationView {
       List(historyModel.historyItems) { item in
-        HistoryRowView(historyItem: item)
+        NavigationLink(destination:HistoryDetailView(historyItem: item, imageID: self.$imageID)
+        ) {
+          HistoryRowView(historyItem: item)
+        }
       }
     }
   }
@@ -20,6 +24,6 @@ struct HistoryListView: View {
 
 struct HistoryListView_Previews: PreviewProvider {
     static var previews: some View {
-      HistoryListView()
+      HistoryListView(imageID:.constant(0))
     }
 }

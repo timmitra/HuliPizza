@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct PizzaHistoryView: View {
+  @State var imageID: Int = 0
   var body: some View {
     VStack {
-      ContentHeaderView()
+      //ContentHeaderView()
       PageTitleView(title: "Pizza History")
-      SelectedImageView(image: "1_250w")
-      HistoryListView()
+      SelectedImageView(image: "\(imageID)_250w")
+      HistoryListView(imageID: $imageID)
       Spacer()
     }
   }

@@ -23,6 +23,7 @@
 		2ACC988F2895DD1400FEC7C6 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC988C2895DD1400FEC7C6 /* OrderModel.swift */; };
 		2ACC98902895DD1400FEC7C6 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC988D2895DD1400FEC7C6 /* HistoryModel.swift */; };
 		2ACC9892289634A900FEC7C6 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC9891289634A900FEC7C6 /* MenuDetailView.swift */; };
+		2ACC989428978CB300FEC7C6 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */; };
 		2AE15CAF2890E63A0079B1F9 /* PizzaHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */; };
 		2AE15CB12890E72E0079B1F9 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */; };
 		2AE15CB42890EC5B0079B1F9 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */; };
@@ -47,6 +48,7 @@
 		2ACC988C2895DD1400FEC7C6 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		2ACC988D2895DD1400FEC7C6 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		2ACC9891289634A900FEC7C6 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
+		2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHistoryView.swift; sourceTree = "<group>"; };
 		2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */,
 				2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */,
+				2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */,
 			);
 			path = HistoryView;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				2A7F18A728812BE70028F455 /* ContentHeaderView.swift in Sources */,
 				2A7F1893287E71610028F455 /* ContentView.swift in Sources */,
 				2A7F18A528812B6C0028F455 /* MenuListView.swift in Sources */,
+				2ACC989428978CB300FEC7C6 /* HistoryDetailView.swift in Sources */,
 				2A7F1891287E71610028F455 /* HuliPizzaApp.swift in Sources */,
 				2A7F18AB28812DA60028F455 /* MenuRowView.swift in Sources */,
 				2ACC988F2895DD1400FEC7C6 /* OrderModel.swift in Sources */,
