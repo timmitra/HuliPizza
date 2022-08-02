@@ -16,7 +16,7 @@ struct MenuDetailView: View {
   @State var quantity: Int = 1
     var menuItem:MenuItem
     var formattedPrice:String{
-        String(format:"%3.2f",menuItem.price * Double(quantity))
+      String(format:"%3.2f",menuItem.price * Double(quantity) * settings.size.rawValue)
     }
     func addItem(){
      // orderModel.add(menuID: menuItem.id)
@@ -86,7 +86,8 @@ struct MenuDetailView: View {
               // in SwiftUI sheets are presented based on a Boolean binding variable
                 .sheet(isPresented: $didOrder) {
                   ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel,
-                              quanity: self.$quantity)
+                              quanity: self.$quantity,
+                              size: self.$settings.size)
                 }
                 Spacer()
             }
