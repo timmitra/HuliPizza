@@ -24,6 +24,7 @@
 		2ACC98902895DD1400FEC7C6 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC988D2895DD1400FEC7C6 /* HistoryModel.swift */; };
 		2ACC9892289634A900FEC7C6 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC9891289634A900FEC7C6 /* MenuDetailView.swift */; };
 		2ACC989428978CB300FEC7C6 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */; };
+		2ACC98962898AD3B00FEC7C6 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC98952898AD3B00FEC7C6 /* RootTabView.swift */; };
 		2AE15CAF2890E63A0079B1F9 /* PizzaHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */; };
 		2AE15CB12890E72E0079B1F9 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */; };
 		2AE15CB42890EC5B0079B1F9 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */; };
@@ -49,6 +50,7 @@
 		2ACC988D2895DD1400FEC7C6 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		2ACC9891289634A900FEC7C6 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		2ACC98952898AD3B00FEC7C6 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHistoryView.swift; sourceTree = "<group>"; };
 		2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
@@ -91,12 +93,13 @@
 				2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */,
 				2AE15CB52890EF4A0079B1F9 /* ListHeaderView.swift */,
 				2AAFCB82289252C5002507C0 /* SelectedImageView.swift */,
+				2ACC98952898AD3B00FEC7C6 /* RootTabView.swift */,
+				2A7F1890287E71610028F455 /* HuliPizzaApp.swift */,
 				2AE15CB22890EA5C0079B1F9 /* HistoryView */,
 				2A7F18A028812A4B0028F455 /* Order View */,
 				2A7F18A128812A650028F455 /* Menu View */,
 				2A7F189F28812A440028F455 /* Model */,
 				2A7F189E28812A370028F455 /* History View */,
-				2A7F1890287E71610028F455 /* HuliPizzaApp.swift */,
 				2A7F1894287E71620028F455 /* Assets.xcassets */,
 				2A7F1896287E71620028F455 /* Preview Content */,
 			);
@@ -234,6 +237,7 @@
 				2A7F18A728812BE70028F455 /* ContentHeaderView.swift in Sources */,
 				2A7F1893287E71610028F455 /* ContentView.swift in Sources */,
 				2A7F18A528812B6C0028F455 /* MenuListView.swift in Sources */,
+				2ACC98962898AD3B00FEC7C6 /* RootTabView.swift in Sources */,
 				2ACC989428978CB300FEC7C6 /* HistoryDetailView.swift in Sources */,
 				2A7F1891287E71610028F455 /* HuliPizzaApp.swift in Sources */,
 				2A7F18AB28812DA60028F455 /* MenuRowView.swift in Sources */,
