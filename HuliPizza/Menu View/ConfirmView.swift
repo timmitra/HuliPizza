@@ -15,6 +15,9 @@ struct ConfirmView: View {
   @Binding var quanity: Int
   @Binding var size: Size
   @State var comments: String = ""
+  @EnvironmentObject var settings:UserPreferences
+  @State var quantity: Int = 1
+  let sizes: [Size] = [.small, .medium, .large]
     ///extracts the menu item name based on `menuID`
     var name:String{
         orderModel.menu(menuID)?.name ?? ""
@@ -24,6 +27,9 @@ struct ConfirmView: View {
       orderModel.add(menuID: menuID, size: size, quantity: quanity, comments: comments)
       isPresented = false // her we dismiss the alert
     }
+  func cancel() {
+    self.isPresented = false
+  }
     
     var body: some View {
         VStack{
@@ -48,14 +54,39 @@ struct ConfirmView: View {
                 .font(.headline)
           TextField("Add your comments here", text: $comments)
             .background(Color("G4"))
+          
+          Picker(selection:$settings.size, label: Text("Pizza Size")) {
+            ForEach (sizes, id: \.self) { size in
+              Text(size.formatted()).tag(size)
+            }
+          }
+          .pickerStyle(SegmentedPickerStyle())
+          .padding()
+          
+          Stepper(value: $quantity, in: 1...10) {
+            Text("Quantity: \(quantity)")
+              .bold()
+          }
+          .padding()
+
             Spacer()
+          HStack {
             Button(action: addItem){
-                Text("Add")
-                    .font(.title)
-                .padding()
-                .background(Color("G4"))
-                .cornerRadius(10)
-            }.padding([.bottom])
+                  Text("Add")
+                      .font(.title)
+                  .padding()
+                  .background(Color("G4"))
+                  .cornerRadius(10)
+            }
+            Spacer()
+            Button(action: cancel){
+                  Text("Cancel")
+                      .font(.title)
+                  .padding()
+                  .background(Color("G4"))
+                  .cornerRadius(10)
+            }
+          }.padding([.bottom, .leading, .trailing])
         }
         .background(Color("G3"))
         .foregroundColor(Color("IP"))
@@ -67,5 +98,6 @@ struct ConfirmView_Previews: PreviewProvider {
     static var previews: some View {
       ConfirmView(menuID: 0, isPresented: .constant(true), orderModel: OrderModel(), quanity: .constant(1), size: .constant(.small))
       // .constant because quantity is bound
+        .environmentObject(UserPreferences())
     }
 }
