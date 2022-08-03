@@ -27,9 +27,6 @@ struct ConfirmView: View {
       orderModel.add(menuID: menuID, size: size, quantity: quanity, comments: comments)
       isPresented = false // her we dismiss the alert
     }
-  func cancel() {
-    self.isPresented = false
-  }
     
     var body: some View {
         VStack{
@@ -54,22 +51,10 @@ struct ConfirmView: View {
                 .font(.headline)
           TextField("Add your comments here", text: $comments)
             .background(Color("G4"))
-          
-          Picker(selection:$settings.size, label: Text("Pizza Size")) {
-            ForEach (sizes, id: \.self) { size in
-              Text(size.formatted()).tag(size)
-            }
-          }
-          .pickerStyle(SegmentedPickerStyle())
-          .padding()
-          
-          Stepper(value: $quantity, in: 1...10) {
-            Text("Quantity: \(quantity)")
-              .bold()
-          }
-          .padding()
-
-            Spacer()
+          SizePickerView(size: $size)
+            .padding()
+          QuantityStepperView(quantity: $quantity)
+          Spacer()
           HStack {
             Button(action: addItem){
                   Text("Add")
@@ -79,14 +64,14 @@ struct ConfirmView: View {
                   .cornerRadius(10)
             }
             Spacer()
-            Button(action: cancel){
+            Button(action: { self.isPresented = false }){
                   Text("Cancel")
                       .font(.title)
                   .padding()
                   .background(Color("G4"))
                   .cornerRadius(10)
             }
-          }.padding([.bottom, .leading, .trailing])
+          }.padding()
         }
         .background(Color("G3"))
         .foregroundColor(Color("IP"))
