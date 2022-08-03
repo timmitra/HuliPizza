@@ -26,6 +26,8 @@
 		2ACC989428978CB300FEC7C6 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */; };
 		2ACC98962898AD3B00FEC7C6 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC98952898AD3B00FEC7C6 /* RootTabView.swift */; };
 		2ACC98982898B5B500FEC7C6 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC98972898B5B500FEC7C6 /* ConfirmView.swift */; };
+		2ACC989A289A25A300FEC7C6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC9899289A25A300FEC7C6 /* MapViewController.swift */; };
+		2ACC989C289A25D000FEC7C6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC989B289A25D000FEC7C6 /* MapView.swift */; };
 		2AE15CAF2890E63A0079B1F9 /* PizzaHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */; };
 		2AE15CB12890E72E0079B1F9 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */; };
 		2AE15CB42890EC5B0079B1F9 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */; };
@@ -53,6 +55,8 @@
 		2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		2ACC98952898AD3B00FEC7C6 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		2ACC98972898B5B500FEC7C6 /* ConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
+		2ACC9899289A25A300FEC7C6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2ACC989B289A25D000FEC7C6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2AE15CAE2890E63A0079B1F9 /* PizzaHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHistoryView.swift; sourceTree = "<group>"; };
 		2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
@@ -157,9 +161,11 @@
 		2AE15CB22890EA5C0079B1F9 /* HistoryView */ = {
 			isa = PBXGroup;
 			children = (
+				2ACC9899289A25A300FEC7C6 /* MapViewController.swift */,
 				2AE15CB02890E72E0079B1F9 /* HistoryListView.swift */,
 				2AE15CB32890EC5B0079B1F9 /* HistoryRowView.swift */,
 				2ACC989328978CB300FEC7C6 /* HistoryDetailView.swift */,
+				2ACC989B289A25D000FEC7C6 /* MapView.swift */,
 			);
 			path = HistoryView;
 			sourceTree = "<group>";
@@ -243,8 +249,10 @@
 				2ACC98962898AD3B00FEC7C6 /* RootTabView.swift in Sources */,
 				2ACC989428978CB300FEC7C6 /* HistoryDetailView.swift in Sources */,
 				2A7F1891287E71610028F455 /* HuliPizzaApp.swift in Sources */,
+				2ACC989C289A25D000FEC7C6 /* MapView.swift in Sources */,
 				2A7F18AB28812DA60028F455 /* MenuRowView.swift in Sources */,
 				2ACC988F2895DD1400FEC7C6 /* OrderModel.swift in Sources */,
+				2ACC989A289A25A300FEC7C6 /* MapViewController.swift in Sources */,
 				2A7F18AF28812EE90028F455 /* PageTitleView.swift in Sources */,
 				2A7F18A328812AAC0028F455 /* OrderListView.swift in Sources */,
 				2AAFCB83289252C5002507C0 /* SelectedImageView.swift in Sources */,
