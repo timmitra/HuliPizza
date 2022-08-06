@@ -55,8 +55,8 @@ struct MenuDetailView: View {
         
     
     var body: some View {
-            VStack {
-                HStack{
+      VStack(alignment: .leading, spacing: 0) {
+        HStack(alignment: .top,spacing: 0){
                     PageTitleView(title: self.menuItem.name)
                     Button(action: self.addItem) {
                         Text("Add to order")
@@ -69,7 +69,8 @@ struct MenuDetailView: View {
                             .cornerRadius(5)
                     }
                     .sheet(isPresented: self.$didOrder){
-                        ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel:self.orderModel, quantity: self.$quantity, size:self.$settings.size)
+                      ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel, quanity: $quantity, size: $settings.size
+                      )
                     }
                 }
                 VStack{
@@ -108,6 +109,7 @@ struct SizePickerView: View {
                 Text(size.formatted()).tag(size)
             }
         }
+        .environmentObject(UserPreferences())
         .pickerStyle(SegmentedPickerStyle())
         .font(.headline)
     }
